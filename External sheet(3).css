@@ -1,0 +1,9 @@
+h2{
+    color: chocolate;/* color to text to h2 tag*/
+    background-color: darkolivegreen;/* background tag for h2 tag*/
+    font-size: 59px;/* font size to h2 tag*/
+}
+p{
+    color:coral;
+    background-color: darkcyan;
+}
