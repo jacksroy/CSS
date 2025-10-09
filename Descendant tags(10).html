@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Tag</title>
+    <style>
+        div p {
+            color: aqua;/* here one p tag is directly related to div and another is not directly related to div tag but it will give the style */
+        }
+        pre{
+            color: antiquewhite;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Descendant tag</h2>
+    <p> Means that the tag is directly or in-directly related to that given tag</p>
+    <div>
+        <p> Directly related to div tag child of div tag
+            <h2> In-directly related to div tag and child of p tag
+                <p> Child of h2 tag and in directly related to div and p tag's</p>
+            </h2>
+        </p>
+    </div>
+
+    <pre>
+        Syntax:
+
+        parent_tag  child_tag 
+        
+        {
+            property1:value1;
+            property2:value2;
+
+        }
+
+        Example:
+
+        div  p
+        
+        {
+            color:green;
+            font-size:36px;
+        }
+    </pre>
+</body>
+</html>
