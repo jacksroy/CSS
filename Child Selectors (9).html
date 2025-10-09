@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selectors</title>
+    <style>
+        div> p{
+            color: blue;
+        }
+        h2 {
+            color: whitesmoke;
+            background-color: black;
+        }
+        pre {
+            color: green;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Child Selectors</h2>
+    <p> Here h2 and p tags are direct child's of body tag</p>
+    <div class="hello"><!-- here h2 ,p and div tag's are direct tags of body -->
+        <p>This is Child Tag of div tag<!-- p tag is direct tag of div tag and in-direct tag of body-->
+            <h2> This is direct class of p tag and in-direct child of div tag</h2><!-- thi is direct tag of p and in-direct tag of div-->
+        </p>
+    </div>
+    <pre>
+        Syntax:
+
+        parent_tag > child_tag 
+        
+        {
+            property1:value1;
+            property2:value2;
+
+        }
+
+        Example:
+
+        div > p
+        
+        {
+            color:green;
+            font-size:36px;
+        }
+    </pre>
+</body>
+</html>
