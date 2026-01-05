@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Colors</title>
+    <style>
+        h3{
+            background-color: brown;
+        }
+        #rgb {
+            background-color: rgb(65, 128, 128);
+        }
+        #hex{
+            background-color: #FF5733; /*the range is 0-F  the ) is least  value and F is High value the six digit must be here the two as a pair there represent the one color first two is red and next two is green and next is blue*/
+        }
+        #hsl{
+            background-color: hsl(240, 100%, 50%); /*240 is the hue value (degree) 100% is the saturation(the percentage of look ) and 50% is the lightness */
+        }
+        #rgba{
+            background-color: rgba(255, 0, 0, 0.5); /* the first three value is red green blue and last value is alpha channel (opacity) that range 0-1 ex:0,0.1,0.2,0.3,0.4 ....1 */
+        }
+        #hsla{
+            background-color: hsla(120, 100%, 50%, 0.3); /* the first three value is hue saturation lightness and last value is alpha channel (opacity) that range 0-1 ex:0,0.1,0.2,0.3,0.4 ....1 */
+        }
+    </style>
+</head>
+<body>
+    <h3>Css Colors with Names</h3>
+    <h3 id="rgb"> Color with RGB using rgb()</h3>
+    <h3 id="hex">Using the hex code</h3>
+    <h3 id="hsl"> Using the HSL Hue Saturation Lightness using hsl() </h3>
+    <h3 id="rgba">Using the RGBA with alpha channel</h3>
+    <h3 id="hsla">Using the HSLA with alpha channel</h3>
+</body>
+</html>

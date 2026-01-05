@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+</head>
+<style>
+    /* box-shadow: horizontal-offset-x vertical-offset-y blur-radius spread-radius color; */
+    .div {
+        box-shadow:-10px 10px 5px 2px gray; /* horizontal-offset-x: -10px, vertical-offset-y: 10px, blur-radius: 5px, spread-radius: 2px, color: gray  we use negative values the opposite direction  the shadow moves for horizontal offset right to left when value is negative  and for vertical offset bottom to top when value is negative    */
+        width: 200px;
+        height: 200px;
+        color: yellow;
+        background-color: blue;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .two {/*minimum we need to specify all values in box-shadow min 2 and max 5*/
+        box-shadow: 0 0 20px 0 rgb(223, 5, 5);
+        width: 200px;
+        height: 200px;
+        background-color: rgb(143, 209, 20);
+        margin: 50px;  
+    }
+
+</style>
+<body>
+    <div class="div">one</div>
+    <div class="two"></div>
+</body>
+</html>

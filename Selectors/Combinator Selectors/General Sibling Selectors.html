@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selectors</title>
+    <style>
+        h2 ~ p {
+            color: gold;
+        }
+        h3 ~ p{
+            font-size: 27px;
+        }
+        pre{
+            color: antiquewhite;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>General Sibling Selectors</h2>
+    <p>Paragraph 1 is is General sibling to h2 </p>
+    <p>Paragraph 2 is is General sibling to h2 </p>
+    <h3> cut out the Sibling here </h3>
+    <p> paragraph of h3 General Sibling tag </p>
+
+     <pre>
+        Syntax:
+
+        current-tag ~ General 
+        
+        {
+            property1:value1;
+            property2:value2;
+
+        }
+
+        Example:
+
+        div ~ p
+        
+        {
+            color:green;
+            font-size:36px;
+        }
+    </pre>
+</body>
+</html> 
+

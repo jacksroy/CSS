@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box for parent</title>
+    <style>
+        #parent {
+            display: flex;  /* Enable flexbox layout  use to give the parent container the ability to control the alignment and distribution of its children */
+            flex-direction:row; /* Arrange children in a row (horizontal)  and we has row ,column ,column-reverse ,row-reverse */
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            flex-wrap: wrap; /* Allow children to wrap to the next line if they exceed the container's width */
+            /* gap:12px; Add space between the children */
+             justify-content: space-between; /*Center children vertically within the parent container  it has flex-start, center, flex-end, space-around, space-between and space-evenly */
+            align-items: flex-end; /* Center children horizontally within the parent container  nad this has flex-start, center, flex-end, stretch ,space-around ,space-evenly ,space-between */
+        }
+        .child {
+            background-color: rgb(28, 196, 28);
+            width: 100px;
+            text-align: center;
+            height: 150px;
+        }
+        #c1{
+            background-color: red;
+        }
+        #c2{
+            background-color: blue;
+        }
+        #c3{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="c1">1</div>
+        <div class="child" id="c2">2</div>
+        <div class="child" id="c3">3</div>
+        <div class="child" id="c1">1</div>
+        <div class="child" id="c2">2</div>
+        <div class="child" id="c3">3</div>
+        <div class="child" id="c1">1</div>
+        <div class="child" id="c2">2</div>
+        <div class="child" id="c3">3</div>
+    </div>
+</body>
+</html>

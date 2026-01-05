@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        p::first-letter{
+            text-transform: uppercase;
+            font-size: 35px; /*The first letter is Upper Case */
+            color: aqua;
+        }
+        p::first-line {
+            color: blue;/*  The first line of the paragraph is Blue */
+        }
+        h2::before {
+            content: "using before h2 tag using ::before ➡️";
+            color: black;
+            width: 30px;
+        }
+         h2::after {
+            content: "using After h2 tag using ::after ⬅️";
+            color: rgb(217, 12, 12);
+            width: 38px;
+        }
+        p::selection {
+            background-color: black;
+            color: yellowgreen;  /* we can change the selected text background color and text color using this*/
+        }
+        
+  
+    </style>
+</head>
+<body>
+    <h2>&nbsp;&nbsp;This is Pseudo Selector Example &nbsp;</h2>
+    
+  
+  <p>
+    Lorem ipsum dolor sit ames connecter adipisicing exit. Laborious detent accusation perspiciatis repudiate? Recusance voluptatibus dolores, veld minus casque ea non flag corrupting placer voluntary accusant, ut aspersors ab lula?
+  </p>
+</body>
+</html>

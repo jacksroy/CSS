@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex box for Child</title>
+    <style>
+      .parent {
+        display: flex;
+        border: 2px solid black;
+        width: 600px;
+        height: 400px;
+      }
+      .child {
+        background-color: lightblue;
+        width: 100px;
+        text-align: center;
+        height: 100px;
+        flex-grow: 1; /* Allow the child to grow and fill available space if we take flex-grow:2 then it take double the space in the parent  */
+      }
+      #one {
+        background-color: red;
+        /* order: -1; */
+        flex-grow: 1;
+        flex-shrink: 9; /* it can shrink more compare to other child means here 9 times more than other child's */
+      }
+      #two {
+        background-color: green;
+        /* order: 1;  */
+        /* Change the order of this child to appear last which has low order then it place at first */
+        flex-grow: 2; /* it take double the space in the parent  compare to one it has more width */
+      }
+      #three {
+        background-color: yellow;
+        align-self: flex-end; /* Override the parent's align-items property for this child only  it has auto ,flex-start ,flex-end ,center ,baseline and stretch */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" id="one">one</div>
+      <div class="child" id="two">two</div>
+      <div class="child" id="three">three</div>
+      <div class="child" id="one">one</div>
+      <div class="child" id="two">two</div>
+      <div class="child" id="three">three</div>
+      <div class="child" id="one">one</div>
+      <div class="child" id="two">two</div>
+      <div class="child" id="three">three</div>
+      <div class="child" id="one">one</div>
+      <div class="child" id="two">two</div>
+      <div class="child" id="three">three</div>
+    </div>
+  </body>
+</html>

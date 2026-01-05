@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pad {
+            padding: 10px;/*All sides padding*/
+            /* padding-left: 15px; only left side */
+            /* padding-right: 15px; only right side
+            padding-top: 26px;only top side
+            padding-bottom: 30px;only bottom side */
+            /* padding: 20px 30px;  it refer the 20px is to top and bottom and 30px to left and right */
+            /* padding: 20px 8px 7px 5px;  it refer 20px to top and 8px to right and 7px to bottom and 5px to left */
+        }
+        #bor {
+            width: 50%;
+            height: 200px;
+            border: solid 2px black; 
+            /* border-right: dashed 2px red;
+            border-bottom: dotted 2px gray;
+            border-radius: 2px;
+            border-top: 2px solid yellowgreen;
+            border-left: 2px double burlywood; */
+        }
+        .mar {
+            margin: 20px;/*To all sides*/
+            /* margin-top:30px ;
+            margin-bottom:30px ;
+            margin-left: 30px;
+            margin-right:30px ; */
+            
+        }
+    </style>
+</head>
+<body>
+    <p class="pad">This is using the box model</p>
+    <p id="bor">  This is Border Example</p>
+    <p class="mar">This is Margin Example </p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .one {
+            /* Linear Gradient */
+            width: 200px;
+            height: 200px;
+            background : linear-gradient(to left ,rgb(120, 225, 120) ,rgb(205, 205, 83),rgb(237, 172, 6)); /* we has also (to top , to left ,to right ,to left ,to bottom right ,to bottom left )*/
+        }
+        .two {
+            /* Radial Gradient */
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background : radial-gradient(circle , rgb(1, 231, 1) , rgb(241, 241, 7), rgb(192, 176, 138)); /* we has also (ellipse , closest-side , closest-corner , farthest-side , farthest-corner )*/
+        }
+        .three {
+            /* Conic Gradient */
+            /*Colors rotate around a center.*/
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background : conic-gradient(from 90deg , rgb(255, 0, 0) , rgb(0, 255, 0) , rgb(0, 0, 255) , rgb(255, 0, 0)); /* we has also (from angle )*/
+        }
+        .four {
+            /* Repeating Linear Gradient */
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background : repeating-linear-gradient(to bottom right , rgb(255, 0, 0) 0px , rgb(255, 0, 0) 10px , rgb(0, 255, 0) 10px , rgb(0, 255, 0) 20px); /* we has also (to top , to left ,to right ,to left ,to bottom right ,to bottom left )*/
+        }
+        .five {
+            /* Repeating Radial Gradient */
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background : repeating-radial-gradient(circle , rgb(0, 0, 255) 0px , rgb(0, 0, 255) 10px , rgb(255, 255, 0) 10px , rgb(255, 255, 0) 20px); /* we has also (ellipse , closest-side , closest-corner , farthest-side , farthest-corner )*/
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    
+</body>
+</html>

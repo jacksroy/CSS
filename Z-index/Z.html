@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z - Index</title>
+    <style>
+        .c1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;/* it can be absolute , relative , fixed   but we must should to be declare the position if we not initial it position then the z-index will not work*/
+            top: 50px;
+            left: 50px;
+            z-index: 1;  /*which z -index is greater  then that will be on top */
+            /*here the z-index is 1 means it is greater than 1 class c2*/
+        }
+        .c2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;/* it can be absolute , relative , fixed   but we must should to be declare the position if we not initial it position then the z-index will not work*/
+            top: 50px;
+            left: 50px;
+            z-index: -1; /*here the z-index is -1 means it is smaller than 1 class c1*/
+        }
+    </style>
+</head>
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    
+</body>
+</html>

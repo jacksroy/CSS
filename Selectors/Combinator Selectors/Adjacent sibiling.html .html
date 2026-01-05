@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selectors</title>
+    <style>
+        h2 + p {
+            color: greenyellow;
+        }
+        h3 + p{
+            font-size: 27px;
+        }
+        pre{
+            color: antiquewhite;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Adjacent Sibling Selectors</h2>
+    <p>This Selectors tell that the next tag of that current tag should has this style</p>
+    <h3>Now p tag has Adjacent Sibling is this h3 tag</h3>
+    <p>Now this p tag is not adjacent sibling to p tag above h3 tag because this is not direct adjacent to the p tag  </p>
+
+     <pre>
+        Syntax:
+
+        current-tag + Adjacent-Sibling-tag 
+        
+        {
+            property1:value1;
+            property2:value2;
+
+        }
+
+        Example:
+
+        div + p
+        
+        {
+            color:green;
+            font-size:36px;
+        }
+    </pre>
+</body>
+</html>

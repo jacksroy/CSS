@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        h2[title] {
+            color: cadetblue;
+        }
+        pre {
+            border: solid 1px black;
+            width:50%;
+            height: 50%;
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        h3[title="this"] {
+            color: blue;
+        }
+        h3[title~="this"] {
+            color: green;
+        }
+         h3[title^="this"] {
+            color: yellow;
+        }
+         h3[title$="this"] {
+            color: rgb(226, 11, 205);
+        }
+
+        h3[title*="this"] {
+            color: rgb(231, 6, 6);
+        }
+    </style>
+</head>
+<body>
+    <h2 title="hello"> we are applying some thing using some attribute selector
+         </h2>
+         <pre>
+            selector [attribute] {
+                property :value;
+            }
+         </pre>
+    <h3 title="this"> we are doing now the attribute with name  </h3>
+     <pre>
+        selector [attribute="value"] {
+            property :value;
+        }
+         </pre>
+   
+     <h3 title="is this is"> we are doing now the attribute with name with ^  means the value can be exactly match this it can be a part of that value </h3>
+     <pre>
+         selector [attribute^="value"] {
+            property :value;
+        }
+         </pre>
+    <h3 title="this is"> we are doing now the attribute with name with $  means the value is present at beginning </h3>
+     <pre>
+         selector [attribute$="value"] {
+            property :value;
+        }
+         </pre>
+
+
+    <h3 title="is that this"> we are doing now the attribute with name with *  means the value is present at ending </h3>
+     <pre>
+         selector [attribute*="value"] {
+            property :value;
+        }
+         </pre>
+
+    
+</body>
+</html>

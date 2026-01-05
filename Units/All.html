@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Units</title>
+    <style>
+        html {
+            font-size: 20px; /* Setting root font size to 20px for rem calculations */
+        }
+        .px {
+            font-size: 20px;/* Pixels   1px is 0.026 cm */
+        }
+        .em {
+            font-size: 2em; /* Em       1em is equal to the font-size of the parent element by default value is 16px num 16*2 = 32px */
+        }
+        .rem {
+            font-size: 2rem; /* Rem      1rem is equal to the font-size of the root element by default value is 16px num 20*2 = 40px */
+        }
+        .percent {
+            font-size: 150%; /* Percent   100% is equal to the font-size of the parent element by default value is 16px num 16*1.5 = 24px */
+        }   
+        .vw {
+            font-size: 5vw; /* Viewport Width   1vw is equal to 1% of the width of the viewport */
+        }
+        .vh{
+            font-size: 5vh; /* Viewport Height   1vh is equal to 1% of the height of the viewport */
+        }
+    </style>
+</head>
+<body>
+    <p class="px"> This is Pixels </p>
+    <p class="em"> This is Em </p>
+    <p class="rem"> This is Rem </p>
+    <p class="percent"> This is Percent </p>
+    <p class="vw"> This is Viewport Width </p>
+    <p class="vh"> This is Viewport Height </p>
+
+</body>
+</html>

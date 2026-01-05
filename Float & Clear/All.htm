@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        #par {
+            width: 600px;
+            height: 400px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        #c1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(6, 188, 248, 0.982);
+            float: left;  /* float has left, right, none, inherit use to tell the position of that element */
+            
+        }
+        #c2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            float: right;
+            margin: 10px;
+        }
+        #c3 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            clear: both; /* clear has left, right, both, none, inherit use to tell the position of that element */
+            margin: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="par">
+        <div id="c1"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div id="c2"></div>
+        <div id="c3"></div>
+
+    </div>
+</body>
+</html>

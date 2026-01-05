@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo Class Selectors Demo</title>
+
+  <style>
+    /* -----------------------------
+       1. LINK STATES
+    ------------------------------*/
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: green;
+    }
+
+    /* -----------------------------
+       2. HOVER & ACTIVE
+    ------------------------------*/
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    /* -----------------------------
+       3. FOCUS
+    ------------------------------*/
+    input:focus {
+      border: 2px solid blue;
+      outline: none;
+    }
+
+    /* -----------------------------
+       4. STRUCTURAL
+    ------------------------------*/
+    li:first-child {
+      color: red;
+    }
+
+    li:last-child {
+      color: green;
+    }
+
+    li:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    /* -----------------------------
+       5. FORM STATES
+    ------------------------------*/
+    input:required {
+      border-color: red;
+    }
+
+    input:optional {
+      border-color: gray;
+    }
+
+    input:disabled {
+      background-color: lightgray;
+    }
+
+    input:checked {
+      outline: 2px solid green;
+    }
+
+    /* -----------------------------
+       6. VALIDATION
+    ------------------------------*/
+    input:valid {
+      border-color: green;
+    }
+
+    input:invalid {
+      border-color: red;
+    }
+
+    /* -----------------------------
+       7. NOT
+    ------------------------------*/
+    p:not(.special) {
+      color: gray;
+    }
+
+    /* -----------------------------
+       8. TARGET
+    ------------------------------*/
+    #target-box:target {
+      background-color: yellow;
+      border: 2px solid black;
+    }
+
+    /* -----------------------------
+       9. ROOT
+    ------------------------------*/
+    :root {
+      --main-color: teal;
+    }
+
+    h2 {
+      color: var(--main-color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Pseudo-Class Selectors Demo</h1>
+
+  <!-- LINKS -->
+  <h2>1. Link States</h2>
+  <a href="https://example.com">Visit Example</a>
+
+  <!-- BUTTON -->
+  <h2>2. Hover & Active</h2>
+  <button>Hover & Click Me</button>
+
+  <!-- INPUT FOCUS -->
+  <h2>3. Focus</h2>
+  <input type="text" placeholder="Click here">
+
+  <!-- LIST -->
+  <h2>4. Structural</h2>
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+  </ul>
+
+  <!-- FORM -->
+  <h2>5. Form States</h2>
+  <input type="text" required placeholder="Required field"><br><br>
+  <input type="text" placeholder="Optional field"><br><br>
+  <input type="text" disabled placeholder="Disabled field"><br><br>
+
+  <input type="checkbox"> Accept terms
+
+  <!-- VALIDATION -->
+  <h2>6. Validation</h2>
+  <input type="email" placeholder="Enter email">
+
+  <!-- NOT -->
+  <h2>7. :not()</h2>
+  <p>This paragraph is normal</p>
+  <p class="special">This paragraph is special</p>
+
+  <!-- TARGET -->
+  <h2>8. :target</h2>
+  <a href="#target-box">Highlight Box</a>
+  <div id="target-box" style="margin-top:10px; padding:10px;">
+    Target Box
+  </div>
+
+</body>
+</html>
