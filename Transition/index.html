@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+
+/*
+transition-property: background-color;
+transition-duration: 0.3s;
+transition-timing-function: ease;
+transition-delay: 0s;*/
+
+/* we has some timing functions  there are ease:smooth start,ease-in:start slow ,ease-out:end slow,ease-in-out :start and end slow*/
+
+/* we can we duration and delay in seconds or milliseconds */
+
+
+
+
+
+        .one {
+            width:200px;
+            height:200px;
+            background-color: aquamarine;
+            /*syntax : transition: property duration timing-function delay; */
+            transition: width 2s ease-in 200ms;/* Here we use transition with the width property  and duration  is 2 seconds and ease-in timing function  and 200ms duration */
+
+            /*If we want to do transition to all properties then we use (all)*/
+            
+        }
+        .two {
+
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(6, 168, 222);
+            transition: all 1s ease-in 2s;
+
+            /**/
+        }
+        .one:hover  {
+            width:400px;
+        }
+        .two:hover {
+            width: 400px;
+            height: 400px;
+            background-color: coral;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+
+</body>
+</html>
