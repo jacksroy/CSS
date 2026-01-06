@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Gradient</title>
+    <style>
+        .text {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+           /* Gradient Text */
+            background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));/* you can use radial-gradient , conic-gradient also */
+            -webkit-background-clip: text;/* For Safari */
+            color: transparent;/* For Safari */
+            background-clip: text;/* For other browsers */
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        Text with Gradient
+    </div>
+</body>
+</html>
