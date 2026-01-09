@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+        .transform {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            margin: 20px;
+
+        }
+        .transform:hover {
+           transform: translate(20px,20px); 
+            
+            
+            /* move the box 20px to the right and 20px down  we we give -20px and -20px  then left and top */
+
+
+            /* transform: translateX(-20px);
+            transform: translateY(30px);
+            transform: translateZ(20px); */
+        } 
+        .scale {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        .scale:hover {
+            
+            transform: scale(1.5);
+            
+            
+            /* it will increase the size 1.5 times */
+            /* transform: scaleX(-2); */
+            
+            /* it will increase the width 2 times and negative sign will reverse the box */
+            /* transform: scaleY(2);  */
+            
+            /* it will increase the height 2 times */
+            /* transform: scale3d(3); */
+            
+            /* It will increase the size in 3D */
+            /* transform: scaleZ(2); */
+            
+            /* it will increase the size in Z axis */
+            transition: 3s;
+        }
+
+        .rotate {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .rotate:hover {
+            transform: rotate(-45deg);
+            /* it will rotate the box in 45 degree  must be give in degree only  */
+
+            /* transform: rotateX(-45deg);
+            transform: rotateY(45deg);
+            transform: rotateZ(45deg); */
+            transition: 2s;
+        }
+        .skew {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(212, 212, 14);
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .skew:hover {
+            transform: skew(20deg,10deg);
+            /* it will skew the box in X axis by 20 degree and in Y axis by 10 degree */
+
+            /* transform: skewX(20deg);
+            transform: skewY(10deg); */
+            transition: 2s;
+        }
+
+        .d {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .d:hover {
+            transform: perspective(200px) rotateY(45deg);
+            transition: 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="transform"></div>
+    <div class="scale"></div>
+    <div class="rotate"></div>
+    <div class="skew"></div>
+    <div class="d"></div>
+    
+</body>
+</html>
