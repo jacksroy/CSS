@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&effect=emboss | fire-animation');  /*if it not work remove the 2 after css?family*/
+
+/*we use pipe symbol (|) to give more than one effect*/
+p {
+  font-family: "Montserrat", sans-serif;  /*Here Second font family is given because if the first font family not support the browser then in case we use second one */
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+}
+
