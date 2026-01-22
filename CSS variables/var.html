@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS variables must start with --. */
+        :root{
+            --hello:green;
+            --font-size:35px;
+        }
+        p{
+            border: 5px solid var(--hello);
+            font-size: var(--font-size);
+             
+        }
+        pre{
+            background-color: black;
+            color: antiquewhite;
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>Testing ..</p>
+    CSS variables must start with --
+    <pre>
+        Declaration:
+        
+        Syntax : --variable_name : value;
+        
+        Example : --hello :green;
+
+        Usage:
+                Syntax: var(--variable_name);
+
+                Example : var(--hello);
+    </pre>
+    <br>
+    <H3>Note:  we need to declare the variables in root to access all over code if we did't do that it is stick for only that particular block</H3>
+</body>
+</html>
